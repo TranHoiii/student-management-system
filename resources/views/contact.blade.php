@@ -11,10 +11,15 @@
                     <h1 class="display-5 fw-bold mb-3">Trao đổi với THM về hồ sơ kế toán, thuế và quản trị.</h1>
                     <p class="lead text-white-50 mb-0">Gửi thông tin qua form hoặc liên hệ trực tiếp qua hotline, email, Zalo để được phản hồi nhanh.</p>
                 </div>
-                <div class="col-lg-4 text-lg-end">
-                    <div class="logo-showcase">
-                        <img src="{{ asset('images/thm-logo.png') }}" alt="Logo THM">
-                        <div class="logo-showcase-caption">Chuẩn mực kế toán | Trọn vẹn niềm tin</div>
+                <div class="col-lg-4">
+                    <div class="banner-logo-card glass-card p-4 text-center">
+                        <div class="d-flex flex-column align-items-center gap-3">
+                            <img class="banner-logo" src="{{ asset('images/thm-logo.png') }}" alt="THM logo">
+                            <div>
+                                <div class="fw-black text-dark fs-4">THM Consulting</div>
+                                <div class="section-copy small">Chuẩn mực kế toán | Trọn vẹn niềm tin</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

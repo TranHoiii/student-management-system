@@ -11,10 +11,15 @@
                     <h1 class="display-5 fw-bold mb-3">Dịch vụ kế toán, thuế và quản trị cho hộ kinh doanh, doanh nghiệp.</h1>
                     <p class="lead text-white-50 mb-0">THM hỗ trợ từ tư vấn ban đầu, triển khai hồ sơ đến theo dõi định kỳ và làm việc với cơ quan quản lý.</p>
                 </div>
-                <div class="col-lg-4 text-lg-end">
-                    <div class="logo-showcase">
-                        <img src="{{ asset('images/thm-logo.png') }}" alt="Logo THM">
-                        <div class="logo-showcase-caption">Chuẩn mực kế toán | Trọn vẹn niềm tin</div>
+                <div class="col-lg-4">
+                    <div class="banner-logo-card glass-card p-4 text-center">
+                        <div class="d-flex flex-column align-items-center gap-3">
+                            <img class="banner-logo" src="{{ asset('images/thm-logo.png') }}" alt="THM logo">
+                            <div>
+                                <div class="fw-black text-dark fs-4">THM Consulting</div>
+                                <div class="section-copy small">Chuẩn mực kế toán | Trọn vẹn niềm tin</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -26,7 +31,7 @@
             <div class="row g-4">
                 @foreach($services as $index => $service)
                     <div class="col-12">
-                        <article class="service-card p-4 p-lg-5">
+                        <article class="service-card premium-card p-4 p-lg-5">
                             <div class="row g-4 align-items-start">
                                 <div class="col-lg-2">
                                     <div class="service-icon fs-3">
@@ -65,10 +70,10 @@
         </div>
     </section>
 
-    <section class="section-pad" style="background: linear-gradient(135deg, #073763, #0d5c75);">
+    <section class="section-pad contact-band">
         <div class="container text-center text-white">
-            <div class="eyebrow text-warning mb-2">Cần tư vấn nhanh?</div>
-            <h2 class="display-6 fw-bold mb-3">Gửi thông tin để THM đề xuất phương án phù hợp.</h2>
+            <div class="eyebrow gold mb-2">Cần tư vấn nhanh?</div>
+            <h2 class="display-6 fw-black mb-3">Gửi thông tin để THM đề xuất phương án phù hợp.</h2>
             <p class="lead text-white-50 mb-4">Bạn chỉ cần mô tả ngắn tình trạng hiện tại, phần còn lại THM sẽ hỗ trợ rà soát và hướng dẫn.</p>
             <a href="{{ route('contact') }}" class="btn btn-light btn-lg fw-bold rounded-2"><i class="bi bi-chat-dots me-2"></i>Nhận tư vấn miễn phí</a>
         </div>
