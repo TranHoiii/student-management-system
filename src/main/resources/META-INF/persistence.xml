@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+    <persistence-unit name="student-management-persistence-unit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        
+        <!-- Entity classes -->
+        <class>com.studentmanagement.entity.Student</class>
+        <class>com.studentmanagement.entity.Subject</class>
+        <class>com.studentmanagement.entity.Grade</class>
+
+        <properties>
+            <!-- JPA standard JDBC configuration (can be overridden by properties) -->
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            
+            <!-- Hibernate configuration -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            
+            <!-- Connection pool config (Hibernate built-in) -->
+            <property name="hibernate.connection.provider_class" value="org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl"/>
+        </properties>
+    </persistence-unit>
+</persistence>
